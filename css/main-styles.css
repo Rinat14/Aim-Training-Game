@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #fff;
+	font-family: 'Khula', sans-serif;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	text-align: center;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+	padding: 8px 18px;
+	border-radius: 20px;
+	transition: all 0.5s ease-in-out;
+}
+a:hover {
+	color: #000;
+	border: none;
+	background-color: #fff;
+}
+.start {
+	font-size: 20px;
+	padding-top: -8px;
+}
+h1 {
+	line-height: 1.4;
+	font-size: 4rem;
+}
+.screen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	transition: margin 0.5s ease-out;
+	background: url('https://images.unsplash.com/photo-1489846986031-7cea03ab8fd0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80') center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.screen.up {
+	margin-top: -100vh;
+}
+.time-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+}
+.time-list li {
+	margin: 10px;
+}
+.time-btn {
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	font-family: inherit;
+	width: 130px;
+	height: 48px;
+	outline: none;
+	padding: 5px 0;
+	transition: all 0.5s ease-in-out;
+	font-size: 20px;
+	border-radius: 20px;
+}
+.time-btn:hover {
+	background-color: #fff;
+	border: none;
+	color: #000;
+}
+.hide {
+	opacity: 0;
+}
+.board {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 500px;
+	height: 500px;
+	background: url('https://images.unsplash.com/photo-1500206329404-5057e0aefa48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80') center no-repeat;
+	background-size: cover;
+	box-shadow: -8px -8px 15px #20252a, 10px 7px 15px #2d343b;
+	border-radius: 30px;
+	overflow: hidden;
+}
+.circle {
+	background-color: #1f1f1f;
+	position: absolute;
+	border-radius: 50%;
+	cursor: pointer;
+}
